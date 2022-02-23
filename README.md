@@ -54,8 +54,8 @@ The guesses can be whitespace delimited or not, but one should use whitespace an
 
 ## ToDo List:
 
-* Implement the program startup, including the random generation of the result match.
-* Implement user input; implement error checking
-* Implement guess parsing and checking
-* Implement Pico/Fermi display (include special unicode characters like green/yellow/red circles) 
-* Implement custom game settings
+* (1.0) Implement the program startup, including the random generation of the result match.
+* (2.0) Implement user input; implement error checking
+* (3.0) Implement guess parsing and checking
+* (4.0) Implement Pico/Fermi display (include special unicode characters like green/yellow/red circles) 
+* (5.0) Implement custom game settings
