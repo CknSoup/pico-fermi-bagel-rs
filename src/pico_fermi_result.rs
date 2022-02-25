@@ -11,13 +11,13 @@ impl CheckResult {
         // TODO Don't assume unique values in {user,final}_list
         // TODO Don't use raw characters; should use some enum for future GUI work
         for i in 0..user_list.len() {
-            // Pico values should be in the front
+            // Fermi values should be in the front
             if user_list[i] == final_list[i] {
-                result.push_front('P');
+                result.push_front('F');
             }
-            // Fermi values should be after the Pico values
+            // Pico values should be after the Fermi values
             else if user_list[i] != final_list[i] && final_list.contains(&user_list[i]) {
-                result.push_back('F');
+                result.push_back('P');
             }
         }
         // Everything after the Fermi values should be Null
