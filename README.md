@@ -1,5 +1,5 @@
-# pico-pico-fermi-rs
-A console based version of the game Pico Pico Fermi, or Pico Fermi bagels written in Rust.
+# pico-fermi-bagel-rs
+A console based version of the game Pico Fermi Bagel written in Rust.
 
 ## Installation
 
@@ -27,13 +27,13 @@ Example play-through:
 $ cargo run
 4 Numbers : 0-9 Range : 8 Guesses
 
-(1) 8 5 4 2  -==-  F - - - 
-(2) 1 3 5 7  -==-  F F - -
-(3) 5 7 3 0  -==-  P - - -
-(4) 5 1 7 6  -==-  F - - -  
-(5) 4 7 1 9  -==-  F F F -
-(6) 1 4 3 9  -==-  P P F F
-(7) 9 4 3 1  -==-  P P P P 
+(1) 8 5 4 2  -==-  P - - - 
+(2) 1 3 5 7  -==-  P P - -
+(3) 5 7 3 0  -==-  F - - -
+(4) 5 1 7 6  -==-  P - - -  
+(5) 4 7 1 9  -==-  P P P -
+(6) 1 4 3 9  -==-  F F P P
+(7) 9 4 3 1  -==-  F F F F 
 
 (A) 9 4 3 1
 You Win!
@@ -44,8 +44,8 @@ The program first starts by stating the game settings.
 The guess number is labeled on the left-hand side with parentheses.
 The user's guess inputs the guess next to it; these can be immediately adjacent, or delimited by spaces.
 After the user submits their guess with the Enter key, their guess's Pico-Fermi result is given.
-For guess 1, the game states 1 Fermi, meaning that one of the numbers is correct, but not in the proper place (in this example, 4).
-While for guess 3, the game states 1 Pico, meaning that one number is correct and in its proper place (here, 3).
+For guess 1, the game states 1 Pico, meaning that one of the numbers is correct, but not in the proper place (in this example, 4).
+While for guess 3, the game states 1 Fermi, meaning that one number is correct and in its proper place (here, 3).
 Notice that the Picos and Fermis fill up from left to right; therefore, for guess 3, the game isn't stating that 5 is in its proper place, rather that one of those numbers is in the correct place.
 
 The game will give you the correct result in the end regardless of whether you guess correctly or not.
